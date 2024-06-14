@@ -1,0 +1,58 @@
+.App{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .link{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+  }
+  input{
+    padding: 1rem;
+    outline: 3px solid transparent;
+    border: none;
+    background-color: #333;
+    color: white;
+    margin: 1rem;
+    border-radius: 10px;
+  }input:hover{
+    outline: 3px solid rgba(255, 255, 255, 0.678);
+    transition: 300ms;
+  }
+  .container, .containerBookList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 80%;
+  }
+  .containerBookList{
+    padding-top: 3rem;
+  }
+  .card{
+    padding: 1.25rem;
+    border-radius: 10px;
+    outline: 1px solid black;
+    color: white;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    button{
+      border-radius: 6px;
+      background-color: rgb(79, 171, 247);
+      color: black;
+      padding: .4rem;
+      outline: none;
+      border: 0;
+      margin-top: .75rem;
+    }button:hover{
+      transition: 300ms;
+      opacity: .8;
+      outline: 1px solid black;
+    }
+  }
+
+}
